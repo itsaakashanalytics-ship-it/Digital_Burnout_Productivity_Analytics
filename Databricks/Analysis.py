@@ -22,7 +22,7 @@
 sfOptions = {
   "sfUrl": "KGHPDWC-NG01063.snowflakecomputing.com",
   "sfUser": "AAKASHKUMAR4090760",
-  "sfPassword": "dbCRbxZTMtv67LC",
+  "sfPassword": "***",
   "sfDatabase": "DIGITAL_BURNOUT_DB",
   "sfSchema": "ANALYTICS",
   "sfWarehouse": "BURNOUT_WH"
