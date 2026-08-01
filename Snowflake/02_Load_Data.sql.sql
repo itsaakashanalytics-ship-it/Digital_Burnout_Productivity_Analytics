@@ -1,0 +1,6 @@
+list @burnout_stage;
+
+COPY INTO DIGITAL_BURNOUT_PRODUCTIVITY
+  FROM @BURNOUT_STAGE/digital_burnout_productivity_dataset.csv
+  FILE_FORMAT = (FORMAT_NAME = CSV_STANDARD_FORMAT)
+  ON_ERROR = 'ABORT_STATEMENT';
