@@ -1,0 +1,143 @@
+/* ==============================
+   DIGITAL BURNOUT ANALYTICS
+   Professional Theme
+============================== */
+
+/* Hide Streamlit default menu & footer */
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
+
+/* Main app */
+.stApp {
+    background: #F4F7FB;
+}
+
+/* Headings */
+h1 {
+    color: #0F172A;
+    font-weight: 800;
+}
+
+h2 {
+    color: #1E293B;
+    font-weight: 700;
+}
+
+h3 {
+    color: #334155;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg,#0F172A,#1E293B);
+}
+
+[data-testid="stSidebar"] * {
+    color: white;
+}
+
+/* Buttons */
+.stButton>button {
+
+    width: 100%;
+
+    border-radius: 12px;
+
+    border: none;
+
+    background: #2563EB;
+
+    color: white;
+
+    font-weight: 600;
+
+    padding: 12px;
+
+    transition: 0.3s;
+}
+
+.stButton>button:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+}
+
+/* Metric cards */
+[data-testid="metric-container"]{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+    border-left:6px solid #2563EB;
+
+}
+
+/* Containers */
+div[data-testid="stVerticalBlock"]>div{
+
+    border-radius:18px;
+
+}
+
+/* Inputs */
+.stTextInput input{
+
+    border-radius:10px;
+
+}
+
+/* Tables */
+
+table{
+
+    border-radius:12px;
+
+}
+
+/* Plotly */
+
+.js-plotly-plot{
+
+    border-radius:18px;
+
+}
+
+/* Success */
+
+.stSuccess{
+
+    border-radius:12px;
+
+}
+
+/* Warning */
+
+.stWarning{
+
+    border-radius:12px;
+
+}
+
+/* Error */
+
+.stError{
+
+    border-radius:12px;
+
+}
