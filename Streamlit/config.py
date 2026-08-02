@@ -7,6 +7,16 @@ Central configuration file.
 import os
 
 # ==========================================================
+# BASE DIRECTORY
+# ==========================================================
+# Anchor all file paths to this file's location, not the process's
+# current working directory. Streamlit Cloud does not guarantee the
+# working directory matches the folder app.py lives in, which is why
+# plain relative paths like "models/....pkl" fail with FileNotFoundError
+# even though the files exist in the repo.
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# ==========================================================
 # APP SETTINGS
 # ==========================================================
 
@@ -30,7 +40,7 @@ APP_PASSWORD = os.getenv("APP_PASSWORD", "admin123")
 # MODEL PATHS
 # ==========================================================
 
-MODEL_FOLDER = "models"
+MODEL_FOLDER = os.path.join(BASE_DIR, "models")
 
 LOGISTIC_MODEL = os.path.join(
     MODEL_FOLDER,
