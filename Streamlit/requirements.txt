@@ -2,6 +2,8 @@ streamlit
 plotly
 pandas
 numpy
+matplotlib
 snowflake-connector-python
 scikit-learn==1.6.1
 joblib
+pyarrow<15
